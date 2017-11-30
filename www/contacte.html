@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+	<meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; media-src *; img-src *; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/formcontact.css" />
+	<script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
+    <title>CAC Mapping</title>
+</head>
+
+<body>
+	<!-- test commented -->
+	<!--
+    <div class="app">
+        <h1>PhoneGap</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div
+	-->
+	<!-- my things -->
+	
+	<nav id="slide-menu">
+	  <ul>
+		<a href = "index.html">
+			<li class="index">Índex</li>
+		</a>
+		<a href = "mapes.html">
+			<li class="mapes">Mapes</li>
+		</a>
+		<a href = "formularis.html">
+		<li class = "formularis">Formularis</li>
+		</a>
+		<a href = "contacte.html">
+			<li class = "contacte">Contacte</li>
+		</a>
+	  </ul>
+	</nav>
+
+	<!-- Content panel -->
+	<div id="content">
+	  <div class ="menu-trigger"></div>
+	  <h1>CAC Contacte</h1>
+	  <div id = "page_container" style="text-align:center">
+	  		<!--<h2 class="w3-wide w3-center">CONTACTE</h2>-->
+			<p class="w3-opacity w3-center"><i>Tens algun dubte? Contactan's!</i></p>
+			<div class="w3-row w3-padding-32">
+			  <div class="w3-col m6 w3-large w3-margin-bottom">
+				<i class="fa fa-map-marker" style="width:30px"></i> Carrer dels Vergós, 36-42 - 08017 Barcelona<br>
+				<i class="fa fa-phone" style="width:30px"></i> Telèfon: 93 557 50 00<br>
+				<i class="fa fa-envelope" style="width:30px"> </i> Email: audiovisual@gencat.cat<br>
+			  </div>
+			  <!-- Automatic Slideshow Images -->
+			<div class="mySlides w3-display-container w3-center">
+			<img src="img/logo-CAC.png" style="width:100%">
+	  
+	  </div>
+	</div>
+	
+	
+	
+	<!--  other -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--
+	<script type="text/javascript">
+        app.initialize();
+    </script>
+	-->
+</body>
+
+</html>

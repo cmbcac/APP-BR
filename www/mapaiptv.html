@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; media-src *; img-src *; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/googlemaps.css" />
+	<script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/markerclusterer.js"></script>
+	<script type="text/javascript" src="js/gi2.js"></script>
+	<script type="text/javascript" src="js/sw.js"></script>
+    <title>Mapes: IP-TV</title>
+</head>
+
+<body>
+
+	<!-- my things -->
+	
+	<nav id="slide-menu">
+	  <ul>
+		<li class="index"><a href = "index.html">Índex</a></li>
+		<li class="mapes"><a href = "mapes.html">Mapes</a></li>
+		<li class = "formularis"><a href = "formularis.html">Formularis</a></li>
+		<li class = "contacte"> <a href = "contacte.html">Contacte</a></li>
+	  </ul>
+	</nav>
+
+
+	<!-- Content panel -->
+	<div id="content-mapes">
+		<div class ="menu-trigger"></div>
+		<h1>Mapes: IP-TV</h1>
+		
+		<div class = "capsaBotons">
+			<a href="mapes.html">consultar <br>TV-FM</a>
+			
+		</div>
+	
+		<div id = "main">
+		
+		</div>
+
+	</div>
+	
+
+	
+	<!-- google maps -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqa-2L_YRe22lkHLFDasHHDaXkAokWVFE&callback=initMap">
+    </script>
+	
+	
+	<!--  other -->
+	<!-- the stub for Cordova/Phonegap; this file doesn't exist but this entry must be here -->
+	<script type="text/javascript" src="cordova.js"></script>
+
+    <!-- jQuery and JQ Mobile -->
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>

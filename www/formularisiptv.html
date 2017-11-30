@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+	<meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; media-src *; img-src *; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/formcontact.css" />
+    <title>CAC Mapping</title>
+</head>
+
+<body>
+	<!-- test commented -->
+	<!--
+    <div class="app">
+        <h1>PhoneGap</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div
+	-->
+	<!-- my things -->
+	
+	<nav id="slide-menu">
+	  <ul>
+		<a href = "index.html">
+			<li class="index">Índex</li>
+		</a>
+		<a href = "mapes.html">
+			<li class="mapes">Mapes</li>
+		</a>
+		<a href = "formularis.html">
+		<li class = "formularis">Formularis</li>
+		</a>
+		<a href = "contacte.html">
+			<li class = "contacte">Contacte</li>
+		</a>
+	  </ul>
+	</nav>
+
+	<!-- Content panel -->
+	<div id="content">
+	  <div class ="menu-trigger"></div>
+	  <h1>CAC Formularis</h1>
+	  <!-- buttons -->
+	  <div class = "capsaBotons">
+		<a href="formularis.html">TV-FM</a>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div id = "page_container">
+	  			  <p class="w3-opacity w3-center"><i>Empleneu aquest formulari per donar-vos d'alta.</i></p><br>
+			  <!-- START HERE -->
+			<form id="gform" method="POST" class="pure-form pure-form-stacked"
+			action="https://script.google.com/macros/s/AKfycbzbvuKS7jvQCupKnYgjiJekj4fL9gMCko5qjBe06QfckrraUd1T/exec">
+			<!-- change the form action to your script url -->
+
+				<fieldset class="pure-group" >
+					<label for="Entitat">Entitat * </label>
+					<input id="Entitat" name="Entitat" value="" 
+					required  />
+				</fieldset>
+				<br>
+				<fieldset class="pure-group">
+					<label for="TipusEntitat" class="select">Tipus Entitat</label>
+					<select name="Tipus entitat" id="TipusEntitat" data-mini="true">
+						<option value="PÚBLICA">Pública</option>
+						<option value="PRIVADA">Privada</option>
+					</select>
+				</fieldset>
+				<br>
+				<fieldset class="pure-group" >
+					<label for="NomComercial">Nom Comercial * </label>
+					<input id="NomComercial" name="Nom Comercial" value="" 
+					required/>
+				</fieldset>
+				<br>
+				<fieldset class="pure-group">
+					<label for="URL">URL * </label>
+					<textarea id="URL" name="URL" value=""
+					required/ rows="5"></textarea>
+				</fieldset>
+				<br>
+				<fieldset class="pure-group">
+					<label for="Programació" class="select">Programació</label>
+					<select name="Programació" id="Programació" data-mini="true">
+						<option value="Lineal">Lineal</option>
+						<option value="A la carta">A la carta</option>
+						<option value="En directe">En directe</option>
+						<option value="Web">Web</option>
+						<option value="Lineal i a la carta">Lineal i a la carta</option>
+						<option value="En directe + a la carta">En directe i a la carta</option>
+					</select>
+				</fieldset>
+				<br>
+				<fieldset class="pure-group" >
+					<label for="CanalTDT">Canal TDT  </label>
+					<input id="CanalTDT" name="Canal TDT" value="" >
+				</fieldset>
+				<br>
+				<fieldset class="pure-group" >
+					<label for="Xarxa">Xarxa  </label>
+					<input id="Xarxa" name="Xarxa" value="" >
+				</fieldset>
+				<br>
+				<fieldset class="pure-group" >
+					<label for="Youtube">Youtube  </label>
+					<input id="Youtube" name="Youtube" value="" >
+				</fieldset>
+				<br>
+
+				<fieldset class="pure-group" >
+					<label for="Població">Població  </label>
+					<input id="Població" name="Població" value="" >
+				</fieldset>
+				<br>
+				<fieldset class="pure-group">
+					<label for="Observacions">Observacions  </label>
+					<textarea id="Observacions" name="Observacions" value="" 
+					rows="10"></textarea>
+				</fieldset>
+				<br>
+				<fieldset class="pure-group">
+					<label for="Latitud">Latitud* </label>
+					<input id="Latitud" name="Latitude" value=""
+					required/ placeholder="Click al mapa" data-mini="true"/>
+				</fieldset>
+				
+				<fieldset class="pure-group">
+					<label for="Longitud">Longitud* </label>
+					<input id="Longitud" name="Longitude"value=""
+					required/ placeholder="Click al mapa" data-mini="true" />
+				</fieldset>
+				
+				<div id="map_form" style="height:250px"> </div>
+			
+				<button class="button-success pure-button button-xlarge" style="background-color:#295E86;color:white">
+					<i class="fa fa-paper-plane"></i>&nbsp;Envia</button>	
+			</form>
+			
+			<!-- Customise the Thankyou Message People See when they submit the form: -->
+			<div style="display:none;" id="thankyou_message">
+				<h2 style="color:green">Les teves dades s'han transmès correctament! Moltes gràcies! </h2>
+				<img src="img/CAC.png" align="middle" style="width:20%;display:block;margin-left: auto;margin-right: auto">
+			</div>
+
+			<!-- Submit the Form to Google Using "AJAX" -->
+
+			<script data-cfasync="false" type="text/javascript"
+			src="js/form-submission-handler.js"></script> 
+			<!-- END -->
+	  </div>
+	</div>
+	
+	<!-- map -->
+	<script> 
+	
+	function initMap() {
+		var marker;
+        var california = {lat: 41.4419, lng: 1.5719};
+        var map = new google.maps.Map(document.getElementById('map_form'), {
+          center: california,
+          zoom: 8
+		});
+		
+        google.maps.event.addListener(map, 'click', function(event) {
+			if (marker != undefined) marker.setMap(null);
+			
+			marker = new google.maps.Marker({
+				position: event.latLng,
+				map: map
+			});
+			document.getElementById('Latitud').value = (marker.getPosition().lat());
+			document.getElementById('Longitud').value =(marker.getPosition().lng());
+			
+		});
+
+	}
+	
+	
+	
+	
+	</script>
+	
+	<!-- google maps -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqa-2L_YRe22lkHLFDasHHDaXkAokWVFE&callback=initMap">
+    </script>
+
+	<!--  other -->
+	<!-- the stub for Cordova/Phonegap; this file doesn't exist but this entry must be here -->
+<!--    <script type="text/javascript" src="cordova.js"></script>-->
+
+    <!-- jQuery and JQ Mobile -->
+	<!--
+    <script type="text/javascript" src="libs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.mobile-1.4.0/jquery.mobile-1.4.0.min.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
