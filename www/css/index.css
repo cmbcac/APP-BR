@@ -1,0 +1,159 @@
+html,body {/*  */
+  width:100%;
+  height:100%;
+  margin: 0px;
+  padding:0px;
+  min-width:320px;
+  min-height:568px;
+}
+
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+    color: #FF6B6B;
+}
+a:hover {
+    color: red;
+
+}
+
+
+
+
+
+
+.one-third {/*  */
+  height:33%;
+  margin:0px;
+  padding:0px;
+}
+
+section#top.one-third:hover{
+	background-color:#eef5f5;
+}
+section#mid.one-third:hover{
+	background-color:#eef5f5;
+}
+section#bot.one-third:hover{
+	background-color:#eef5f5;
+}
+
+h1#title{/*  */
+  margin:0px;
+  padding-top:40px;
+  padding-bot:40px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  left:15%;
+  width:200px;
+}
+h1#op2, h1#op3{/*  */
+  margin:0px;
+  padding-top:40px;
+  padding-bot:40px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  left:72%;
+  width:200px
+}
+
+
+#top{/*  */
+  background-color:#FCFEFE;
+  background-image: url(http://grinbaumorthodontics.com/img/schedule/fill-out-form-icon.png);
+  background-repeat: no-repeat;
+  background-size:40%;
+  background-position-y: center;
+  background-position-x: 22%;
+}
+
+#mid{/*  */
+    background-color: #FCFEFE;
+    height: 34%;
+    text-align: center;
+    position: relative;
+    background-image: url(https://image.ibb.co/jXwEOR/the_location_of_the_1724293_960_720.png);/*url(https://preview.ibb.co/mkkfFw/catalonia_google_maps.png);*/
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: center;
+	background-position-x:84%;
+}
+#bot{/*  */
+  background-color:#FCFEFE;
+  background-image: url(https://www.jetco.com.hk/images/icons/Icon-contact-us.png);
+  background-repeat: no-repeat;
+  background-size:60%;
+  background-position-y: center;
+  background-position-x: 3%;
+  
+}
+
+
+
+@media screen and (max-width:319px){
+	h1#op2, h1#op3{
+		left:57%;
+		font-size:1.2em;
+	}
+	
+	h1#title{
+		font-size:1.2em;
+		left:-6%;
+	}
+
+}
+
+@media screen and (min-width:320px) and (max-width:469px){/*  */
+	h1#op2, h1#op3{
+		left:60%;
+	}
+	h1#title{
+		left:-4%;
+	}
+}
+
+@media screen and (min-width: 470px) and (max-width:619px){
+	h1#op2, h1#op3{
+		left:62.5%;
+		
+	}
+	h1#title{
+		left:5.5%;
+	}
+	
+}
+
+@media screen and (min-width: 620px) and (max-width:830px){/*  */
+	h1#op2, h1#op3{
+		left:65%;
+	}
+	h1#title{
+		left:8%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

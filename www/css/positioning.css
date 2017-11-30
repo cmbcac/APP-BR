@@ -1,0 +1,13 @@
+html,body{
+	height:100%;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	max-width:100%;
+	background-color:#fcfeff;
+}
+
+div.menu-trigger:hover{
+	background-color:#d0e6ed;
+	cursor:pointer;
+}
